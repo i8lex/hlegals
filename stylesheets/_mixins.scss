@@ -92,3 +92,16 @@ $left: 50%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@mixin btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #24A3FF;
+  box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  padding: 18px 30px;
+}
