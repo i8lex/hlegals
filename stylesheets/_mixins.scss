@@ -1,0 +1,94 @@
+$fontSize: 30px;
+$bgr-color: #263238;
+$text-color: #000000;
+$h-color: #323264;
+$border-radius: 5px;
+$padding: 17px 64px;
+$max-width: 635px;
+$fontWeight: 700;
+$lineHeight: 26px;
+$translate: translate(-50%, -50%);
+$top: 50%;
+$bottom: 30px;
+$left: 50%;
+
+@mixin flex__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin width($max-width) {
+  width: 100%;
+  max-width: $max-width;
+}
+
+@mixin paragraph ($fontWeight, $fontSize, $lineHeight, $text-color) {
+  font-style: normal;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $text-color;
+}
+
+@mixin positionTop($top, $left) {
+  top: $top;
+  left: $left;
+  transform: $translate;
+}
+
+@mixin positionBottom($bottom, $left) {
+  bottom: $bottom;
+  left: $left;
+  transform: $translate;
+}
+
+@mixin h3Caps($fontSize, $lineHeight, $h-color) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $h-color;
+}
+
+@mixin h3Link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+
+@mixin h3Reg {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #24A3FF;
+}
+
+@mixin h4Reg($h-color) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: $h-color;
+}
+
+@mixin title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,171 @@
+@import "mixins";
+
+.member {
+  padding: 60px 0;
+
+  &__wrapper {
+    @include flex__row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    @include width(400px);
+  }
+
+  &__box {
+    @include flex__column;
+    padding: 30px;
+    background: #F5F5FA;
+    border-radius: 12px;
+
+    &__link {
+      @include h3Link;
+      margin-bottom: 5px;
+
+      &:hover {
+        color: #F0145A;
+      }
+
+      &:hover svg {
+        stroke: #F0145A;
+      }
+    }
+
+    &__title {
+      @include title;
+      margin-bottom: 30px;
+      padding-right: 40px;
+      max-width: 1180px;
+    }
+
+    &__name {
+      @include paragraph(700, 16px, 20px, #B3B3BA);
+      margin-bottom: 6px;
+    }
+
+    &__state {
+      @include paragraph(400, 16px, 22px, #B3B3BA);
+    }
+
+  }
+
+  &__switcher {
+    margin: 0 auto;
+    @include flex__row;
+    justify-content: center;
+    gap: 15px;
+
+    &__circle {
+      @include width(16px);
+      padding: 8px;
+      border-radius: 100%;
+      background: #24A3FF;
+      opacity: 0.2;
+
+      &:active {
+        opacity: 1;
+      }
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+
+    &__circle-active {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .member {
+
+    &__img {
+      @include width(400px);
+    }
+
+    &__box {
+
+      &__title {
+        padding-right: 30px;
+        max-width: 860px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .member {
+
+    &__img {
+      @include width(400px);
+    }
+
+    &__box {
+
+      &__title {
+        max-width: 444px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .member {
+
+    &__wrapper {
+      max-width: 648px;
+      @include flex__column;
+      align-items: flex-start;
+      align-content: flex-start;
+      justify-content: center;
+      margin: 0 auto 30px;
+    }
+
+    &__img {
+      @include width(648px);
+    }
+
+    &__box {
+      @include flex__column;
+      border-radius:0 0 12px 12px;
+
+
+
+      &__title {
+        margin-bottom: 30px;
+        padding-right: 0;
+        max-width: 648px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .member {
+
+    &__wrapper {
+      max-width: 315px;
+      margin: 0 auto 30px;
+    }
+
+    &__img {
+      @include width(315px);
+    }
+
+    &__box {
+      max-width: 315px;
+      @include flex__column;
+      border-radius:0 0 12px 12px;
+
+      &__title {
+        font-size: 30px;
+        line-height: 37px;
+        max-width: 255px;
+      }
+    }
+  }
+}

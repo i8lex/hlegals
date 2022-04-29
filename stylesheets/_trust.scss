@@ -1,0 +1,301 @@
+@import "mixins";
+
+.trust {
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 1720px;
+  }
+
+  &__title {
+    @include h3Caps(14px, 17px, $h-color);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__box {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &__img,
+    &__link {
+      @include width(430px);
+      max-height: 120px;
+      display: flex;
+    }
+
+    &__hilel {
+      padding: 36px 106px 36px 107px;
+      background: #1C4280;
+    }
+
+    &__wannaBiz {
+      padding: 44px 115px 44px 116px;
+      background: #143646;
+    }
+
+    &__tapgerine {
+      background: #F48B30;
+      padding: 38px 125px 38px 126px;
+    }
+
+    &__3dLook {
+      background: #9E4DC3;
+      padding: 39px 125px;
+    }
+
+    &__orangear {
+      background: #FD9339;
+      padding: 38px 128px;
+    }
+
+    &__adtelligent {
+      background: #E2E2E4;
+      padding: 36px 103px 36px 104px;
+    }
+
+    &__clickky {
+      background: #C71C36;
+      padding: 29px 146px 30px 146px;
+    }
+
+    &__eco {
+      background: #DCF3F9;
+      padding: 22px 142px;
+    }
+
+    &__infraTec {
+      background: #EAEAEA;
+      padding: 30px 124px;
+    }
+
+    &__cityPark {
+      background: #282240;
+      padding: 41px 124px 41px 125px;
+    }
+
+    &__artPrint {
+      background: #1D4568;
+      padding: 37px 120px 37px 121px;
+    }
+
+    &__ultimate {
+      background: #000000;
+      padding: 13px 139px 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .trust {
+
+    &__wrapper {
+      max-width: 1440px;
+    }
+
+    &__box {
+
+      &__img,
+      &__link {
+        @include width(360px);
+      }
+
+      &__hilel {
+        padding: 36px 71px 36px 72px;
+      }
+
+      &__wannaBiz {
+        padding: 44px 80px 44px 81px;
+      }
+
+      &__tapgerine {
+        padding: 38px 90px 38px 91px;
+      }
+
+      &__3dLook {
+        padding: 39px 90px;
+      }
+
+      &__orangear {
+        padding: 38px 93px;
+      }
+
+      &__adtelligent {
+        padding: 36px 86px 36px 87px;
+      }
+
+      &__clickky {
+        padding: 29px 111px 30px 111px;
+      }
+
+      &__eco {
+        padding: 22px 107px;
+      }
+
+      &__infraTec {
+        padding: 30px 89px;
+      }
+
+      &__cityPark {
+        padding: 41px 89px 41px 90px;
+      }
+
+      &__artPrint {
+        padding: 37px 85px 37px 86px;
+      }
+
+      &__ultimate {
+        padding: 13px 104px 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .trust {
+
+    &__wrapper {
+      max-width: 1024px;
+    }
+
+    &__box {
+
+      &__img,
+      &__link {
+        @include width(256px);
+      }
+
+      &__hilel {
+        padding: 36px 19px 36px 20px;
+      }
+
+      &__wannaBiz {
+        padding: 44px 28px 44px 29px;
+      }
+
+      &__tapgerine {
+        padding: 38px 38px 38px 39px;
+      }
+
+      &__3dLook {
+        padding: 39px 38px;
+      }
+
+      &__orangear {
+        padding: 38px 41px;
+      }
+
+      &__adtelligent {
+        padding: 36px 61.16px 36px 61.87px;
+      }
+
+      &__clickky {
+        padding: 29px 59px 30px;
+      }
+
+      &__eco {
+        padding: 22px 55px;
+      }
+
+      &__infraTec {
+        padding: 30px 37px;
+      }
+
+      &__cityPark {
+        padding: 41px 37px 41px 38px;
+      }
+
+      &__artPrint {
+        padding: 37px 33px 37px 34px;
+      }
+
+      &__ultimate {
+        padding: 13px 52px 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .trust {
+
+    &__wrapper {
+      max-width: 768px;
+    }
+
+    &__box {
+      grid-template-columns: repeat(3, 1fr);
+      border-radius: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .trust {
+
+    &__wrapper {
+      max-width: 375px;
+    }
+
+    &__box {
+      grid-template-columns: 1fr;
+
+      &__img,
+      &__link {
+        @include width(375px);
+      }
+
+      &__hilel {
+        padding: 36px 78px 36px 80px;
+      }
+
+      &__wannaBiz {
+        padding: 44px 87px 44px 89px;
+      }
+
+      &__tapgerine {
+        padding: 38px 97px 38px 99px;
+      }
+
+      &__3dLook {
+        padding: 39px 97px;
+      }
+
+      &__orangear {
+        padding: 38px 100px;
+      }
+
+      &__adtelligent {
+        padding: 36px 90px;
+      }
+
+      &__clickky {
+        padding: 29px 100px 30px;
+      }
+
+      &__eco {
+        padding: 22px 115px;
+      }
+
+      &__infraTec {
+        padding: 30px 95px;
+      }
+
+      &__cityPark {
+        padding: 41px 97px;
+      }
+
+      &__artPrint {
+        padding: 37px 93px;
+      }
+
+      &__ultimate {
+        padding: 13px 111px 12px;
+      }
+    }
+  }
+}
