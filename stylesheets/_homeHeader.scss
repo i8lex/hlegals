@@ -3,12 +3,16 @@
 .header {
   padding: 0 160px;
   z-index: 99;
+  @include width(1920px);
+  position: absolute;
+
 
   &__opacity {
     display: none;
   }
 
   &__wrapper {
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto;
@@ -106,12 +110,20 @@
 
 @media screen and (max-width: 1440px) {
   .header {
+    @include width(1320px);
     padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    @include width(924px);
   }
 }
 
 @media screen and (max-width: 768px) {
   .header {
+    @include width(648px);
 
     &__wrapper {
       grid-template-columns: 1fr;
@@ -139,12 +151,13 @@
     padding: 0 15px;
 
     &__wrapper {
+      margin-top: 10px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
       justify-items: flex-end;
       grid-gap: 0;
-      align-items: center;
+      align-items: start;
     }
 
     &__logo {
@@ -210,7 +223,6 @@
       &:nth-child(2) {
         display: inline-flex;
         align-items: center;
-        transform: translateX(-2px);
       }
     }
 

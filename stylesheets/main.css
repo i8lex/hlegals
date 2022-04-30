@@ -2,11 +2,15 @@
 .header {
   padding: 0 160px;
   z-index: 99;
+  width: 100%;
+  max-width: 1920px;
+  position: absolute;
 }
 .header__opacity {
   display: none;
 }
 .header__wrapper {
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto;
@@ -106,10 +110,22 @@
 
 @media screen and (max-width: 1440px) {
   .header {
+    width: 100%;
+    max-width: 1320px;
     padding: 0 60px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .header {
+    width: 100%;
+    max-width: 924px;
+  }
+}
 @media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    max-width: 648px;
+  }
   .header__wrapper {
     grid-template-columns: 1fr;
     justify-items: flex-start;
@@ -131,12 +147,13 @@
     padding: 0 15px;
   }
   .header__wrapper {
+    margin-top: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     justify-items: flex-end;
     grid-gap: 0;
-    align-items: center;
+    align-items: start;
   }
   .header__logo {
     width: 100%;
@@ -201,7 +218,6 @@
   .header__link:nth-child(2) {
     display: inline-flex;
     align-items: center;
-    transform: translateX(-2px);
   }
   .header__burger {
     display: flex;
@@ -225,7 +241,7 @@
 .home {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0 0 12px 12px;
-  padding: 50px 0 60px;
+  padding: 0 60px 60px;
   position: relative;
 }
 .home__shadowOne {
@@ -246,7 +262,7 @@
   justify-content: space-between;
 }
 .home__bgr {
-  margin: -195px auto 60px;
+  margin: 0 auto 60px;
   position: relative;
   width: 100%;
   max-width: 872px;
@@ -418,7 +434,7 @@
 
 @media screen and (max-width: 1440px) {
   .home__bgr {
-    margin: -170px auto 60px;
+    margin: 0 auto 60px;
     width: 100%;
     max-width: 697px;
   }
@@ -463,10 +479,13 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .home {
+    padding: 0;
+  }
   .home__bgr {
     width: 100%;
     max-width: 893.28px;
-    margin: -225px auto 60px;
+    margin: 0 auto 60px;
   }
   .home__bgr__symbol {
     width: 100%;
@@ -512,7 +531,9 @@
 }
 @media screen and (max-width: 375px) {
   .home {
-    padding: 10px 0 60px;
+    padding: 0;
+    width: 100%;
+    max-width: 375px;
   }
   .home__opacity {
     display: block;
@@ -527,7 +548,7 @@
   .home__bgr {
     width: 100%;
     max-width: 523.4px;
-    margin: -97px auto 60px;
+    margin: 0 auto 60px;
   }
   .home__bgr__text {
     max-width: 315px;

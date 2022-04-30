@@ -3,7 +3,7 @@
 .home {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0 0 12px 12px;
-  padding: 50px 0 60px;
+  padding: 0 60px 60px;
   position: relative;
 
   &__shadowOne {
@@ -25,7 +25,7 @@
   }
 
   &__bgr {
-    margin: -195px auto 60px;
+    margin: 0 auto 60px;
     position: relative;
     @include width(872px);
 
@@ -79,6 +79,7 @@
     &__box {
       @include flex__column;
       justify-content: flex-end;
+
 
       &__list {
         @include paragraph(700, 38px, 46px, #B3B3BA);
@@ -181,7 +182,7 @@
   .home {
 
     &__bgr {
-      margin: -170px auto 60px;
+      margin: 0 auto 60px;
       @include width(697px);
 
       &__symbol {
@@ -245,10 +246,11 @@
 
 @media screen and (max-width: 768px) {
   .home {
+    padding: 0;
 
     &__bgr {
       @include width(893.28px);
-      margin: -225px auto 60px;
+      margin: 0 auto 60px;
 
       &__symbol {
         @include width(893.28px);
@@ -308,7 +310,8 @@
 
 @media screen and (max-width: 375px) {
   .home {
-    padding: 10px 0 60px;
+    padding: 0;
+    @include width(375px);
 
     &__opacity {
       display: block;
@@ -322,7 +325,7 @@
 
     &__bgr {
       @include width(523.4px);
-      margin: -97px auto 60px;
+      margin: 0 auto 60px;
 
       &__text {
         max-width: 315px;
