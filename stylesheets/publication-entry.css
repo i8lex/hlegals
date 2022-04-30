@@ -90,7 +90,6 @@ img {
   display: none;
 }
 .header__wrapper {
-  padding: 50px 0 60px;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: auto;
@@ -229,9 +228,10 @@ img {
 }
 @media screen and (max-width: 375px) {
   .header {
-    padding: 0 15px;
+    padding: 15px 0 30px;
   }
   .header__opacity {
+    display: block;
     position: absolute;
     width: 100%;
     max-width: 375px;
@@ -239,8 +239,10 @@ img {
     background: #F5F5FA;
     top: 0;
     left: 0;
+    z-index: -1;
   }
   .header__wrapper {
+    padding: 0 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -295,10 +297,10 @@ img {
   .header__phone {
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 20px;
     color: #B3B3BA;
-    margin-left: 134px;
+    margin-left: 117px;
   }
   .header__text {
     display: none;

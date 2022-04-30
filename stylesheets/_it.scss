@@ -160,7 +160,20 @@
 
 @media screen and (max-width: 375px) {
   .it {
+    padding: 15px 0 30px;
+
     @include width(375px);
+
+    &__opacity {
+      display: block;
+      position: absolute;
+      width: 100%;
+      max-width: 375px;
+      height: 45px;
+      background: rgba(245, 245, 250, 0.2);
+      top: 0;
+      left: 0;
+    }
 
     &__wrapper {
       @include width(315px);

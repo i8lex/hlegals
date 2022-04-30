@@ -1,4 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+  display: block;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.facebook__white {
+  fill: #FFFFFF;
+  width: 100%;
+  max-width: 24px;
+  max-height: 24px;
+}
+.facebook__white:hover {
+  fill: #F0145A;
+  transition: fill 300ms ease-in-out;
+}
+
+.facebook__gray {
+  fill: #B3B3BA;
+  width: 100%;
+  max-width: 24px;
+  max-height: 24px;
+}
+.facebook__gray:hover {
+  fill: #F0145A;
+  transition: fill 300ms ease-in-out;
+}
+
+.facebook__blue {
+  fill: #24A3FF;
+  width: 100%;
+  max-width: 38px;
+  max-height: 38px;
+}
+.facebook__blue:hover {
+  fill: #F0145A;
+  transition: fill 300ms ease-in-out;
+}
+
+.trust__margin {
+  margin-bottom: 60px;
+}
+
+.arrow-svg {
+  margin-left: 5.5px;
+  stroke: #24A3FF;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
 .it {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0 0 12px 12px;
@@ -165,8 +246,19 @@
 }
 @media screen and (max-width: 375px) {
   .it {
+    padding: 15px 0 30px;
     width: 100%;
     max-width: 375px;
+  }
+  .it__opacity {
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 375px;
+    height: 45px;
+    background: rgba(245, 245, 250, 0.2);
+    top: 0;
+    left: 0;
   }
   .it__wrapper {
     width: 100%;
@@ -707,72 +799,6 @@
     grid-column: 1/2;
     grid-row: 3/4;
     justify-self: center;
-  }
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Montserrat", Arial, sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  object-fit: cover;
-  display: block;
-}
-
-.container {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-.facebook__white {
-  fill: #FFFFFF;
-  width: 100%;
-  max-width: 24px;
-  max-height: 24px;
-}
-.facebook__white:hover {
-  fill: #F0145A;
-  transition: fill 300ms ease-in-out;
-}
-
-.facebook__blue {
-  fill: #24A3FF;
-  width: 100%;
-  max-width: 38px;
-  max-height: 38px;
-}
-.facebook__blue:hover {
-  fill: #F0145A;
-  transition: fill 300ms ease-in-out;
-}
-
-.arrow-svg {
-  margin-left: 5.5px;
-  stroke: #24A3FF;
-}
-
-@media screen and (max-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 768px;
   }
 }
 
