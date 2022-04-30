@@ -73,6 +73,7 @@
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
     @include width(1320px);
 
     &__title {
@@ -101,7 +102,7 @@
       display: flex;
       align-items: flex-start;
 
-      &::before {
+      &:before {
         content: url("../images/icon/dot-separator.svg");
         display: inline-flex;
         width: 3px;
@@ -117,5 +118,76 @@
 }
 
 @media screen and (max-width: 1440px) {
+  .it {
+    @include width(1440px);
 
+    &__wrapper {
+      @include width(1080px);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .it {
+    @include width(1024px);
+
+    &__wrapper {
+      @include width(904px);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .it {
+    @include width(768px);
+
+    &__wrapper {
+      @include width(648px);
+    }
+
+    &__container {
+      &__list {
+        @include width(280px);
+
+        &:last-child {
+          margin-left: 50px;
+          align-self: start;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .it {
+    @include width(375px);
+
+    &__wrapper {
+      @include width(315px);
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__container {
+      grid-template-columns: 1fr;
+
+      &__title {
+        font-size: 22px;
+        line-height: 27px;
+        grid-column: 1 / 2;
+      }
+
+      &__list {
+        @include width(280px);
+
+        &:last-child {
+          margin-left: 0;
+          align-self: start;
+        }
+      }
+    }
+  }
 }

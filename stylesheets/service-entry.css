@@ -83,6 +83,7 @@
 .it__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
   width: 100%;
   max-width: 1320px;
 }
@@ -116,7 +117,7 @@
   display: flex;
   align-items: flex-start;
 }
-.it__container__text::before {
+.it__container__text:before {
   content: url("../images/icon/dot-separator.svg");
   display: inline-flex;
   width: 3px;
@@ -124,6 +125,74 @@
   margin-right: 8px;
 }
 
+@media screen and (max-width: 1440px) {
+  .it {
+    width: 100%;
+    max-width: 1440px;
+  }
+  .it__wrapper {
+    width: 100%;
+    max-width: 1080px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .it {
+    width: 100%;
+    max-width: 1024px;
+  }
+  .it__wrapper {
+    width: 100%;
+    max-width: 904px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .it {
+    width: 100%;
+    max-width: 768px;
+  }
+  .it__wrapper {
+    width: 100%;
+    max-width: 648px;
+  }
+  .it__container__list {
+    width: 100%;
+    max-width: 280px;
+  }
+  .it__container__list:last-child {
+    margin-left: 50px;
+    align-self: start;
+  }
+}
+@media screen and (max-width: 375px) {
+  .it {
+    width: 100%;
+    max-width: 375px;
+  }
+  .it__wrapper {
+    width: 100%;
+    max-width: 315px;
+  }
+  .it__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .it__container {
+    grid-template-columns: 1fr;
+  }
+  .it__container__title {
+    font-size: 22px;
+    line-height: 27px;
+    grid-column: 1/2;
+  }
+  .it__container__list {
+    width: 100%;
+    max-width: 280px;
+  }
+  .it__container__list:last-child {
+    margin-left: 0;
+    align-self: start;
+  }
+}
 .header {
   padding: 0 160px;
   z-index: 99;

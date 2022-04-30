@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import "_mixins";
+@import "itHeader";
+@import "experiences";
+@import "trust";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+  display: block;
+}
+
+.footer-background {
+  background-color: #FFFFFF;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.facebook__white {
+  fill: #FFFFFF;
+  @include width(24px);
+  max-height: 24px;
+
+  &:hover {
+    fill: #F0145A;
+    transition: fill 300ms ease-in-out;
+  }
+}
+
+.facebook__blue {
+  fill: #24A3FF;
+  @include width(38px);
+  max-height: 38px;
+
+  &:hover {
+    fill: #F0145A;
+    transition: fill 300ms ease-in-out;
+  }
+}
+
+.trust__margin {
+  margin-bottom: 60px;
+}
+
+.arrow-svg {
+  margin-left: 5.5px;
+  stroke: #24A3FF;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}

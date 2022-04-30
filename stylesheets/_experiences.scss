@@ -1,0 +1,205 @@
+@import "mixins";
+
+
+.services {
+  padding: 50px 0 60px;
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0 0 12px 12px;
+
+  &__wrapper {
+    padding: 0 160px;
+  }
+
+  &__shadowOne {
+    padding-bottom: 10px;
+    margin: 0 20px;
+    background: #CACADB;
+    border-radius: 0 0 12px 12px;
+  }
+
+  &__shadowTwo {
+    padding-bottom: 10px;
+    margin: 0 40px 60px;
+    background: #E7E7F2;
+    border-radius: 0 0 12px 12px;
+  }
+
+  &__experiences {
+    &__pageLink {
+      @include h3Caps(14px, 17px, #24A3FF);
+      margin-bottom: 10px;
+
+      &:hover {
+        color: #F0145A;
+        transition: color 300ms ease-in-out;
+      }
+
+      &:hover svg {
+        stroke: #F0145A;
+        transition: stroke 300ms ease-in-out;
+      }
+    }
+
+    &__pageTitle {
+      @include title;
+      margin-bottom: 60px;
+    }
+
+    &__cardBox {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 60px;
+
+      &__card {
+        max-width: 493.33px;
+
+        &__icon {
+          @include width(92px);
+          margin-bottom: 20px;
+          padding: 14px;
+          background: #FFFFFF;
+          border-radius: 24px;
+        }
+
+        &__title {
+          @include h3Reg;
+          max-width: 493px;
+          color: #24A3FF;
+          margin-bottom: 15px;
+
+          &:hover {
+            color: #F0145A;
+            transition: color 300ms ease-in-out;
+          }
+        }
+
+        &__text {
+          @include paragraph(400, 16px, 26px, #FFFFFF);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .services {
+     &__wrapper {
+       padding: 0 60px;
+     }
+
+    &__experiences {
+      &__box {
+        max-width: 581px;
+      }
+
+      &__cardBox {
+        &__container {
+          margin: 0 60px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .services {
+
+    &__experiences__cardBox {
+
+        &__container {
+          max-width: 904px;
+          margin: 0 60px;
+        }
+
+        &__card {
+          max-width: 261.33px;
+        }
+      }
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+
+    &__experiences__cardBox{
+      grid-template-columns: repeat(2, 1fr);
+
+      &__container {
+          max-width: 648px;
+          margin: 0 60px;
+        }
+
+      &__card {
+          max-width: 294px;
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .services {
+    padding: 10px 0;
+    @include width(375px);
+
+    &__wrapper {
+      padding: 0 30px;
+    }
+
+    &__opacity {
+      display: block;
+      position: absolute;
+      @include width(375px);
+      height: 45px;
+      background: rgba(245, 245, 250, 0.2);
+      top: 0;
+      left: 0;
+    }
+
+    &__experiences {
+      &__box {
+        max-width: 315px;
+
+        &:first-child {
+          margin-right: -720px;
+          transform: translateX(0px);
+        }
+
+        &__list {
+          font-size: 30px;
+          line-height: 37px;
+        }
+
+        &__title {
+          font-size: 20px;
+          line-height: 24px;
+          margin: 0;
+        }
+
+        &__text {
+          font-size: 19px;
+          line-height: 30px;
+        }
+      }
+
+      &__pageTitle {
+        font-size: 30px;
+        line-height: 37px;
+      }
+
+      &__cardBox {
+        grid-template-columns: 1fr;
+
+        &__container {
+          max-width: 315px;
+          margin: 0 30px;
+        }
+
+        &__card {
+          max-width: 294px;
+        }
+      }
+    }
+  }
+}
