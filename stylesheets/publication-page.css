@@ -662,5 +662,11 @@ img {
   align-self: center;
   justify-self: center;
 }
+.publications__btn:hover {
+  background: #0085FF;
+}
+.publications__btn:active {
+  background: #006CCF;
+}
 
 /*# sourceMappingURL=publication-page.css.map */

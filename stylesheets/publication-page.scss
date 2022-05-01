@@ -41,5 +41,13 @@
     grid-column: 1 / 4;
     align-self: center;
     justify-self: center;
+
+    &:hover {
+      background: #0085FF;
+    }
+
+    &:active {
+      background: #006CCF;
+    }
   }
 }
