@@ -1045,13 +1045,17 @@
   color: #24A3FF;
   margin-bottom: 15px;
 }
+.publications__box__card__title:hover {
+  color: #F0145A;
+  transition: 300ms ease-in-out;
+}
 .publications__box__card__date {
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   color: #B3B3BA;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 .publications__box__card__separator {
   width: 100%;
@@ -1153,15 +1157,17 @@
   }
 }
 .footer {
-  padding-bottom: 30px;
+  margin: 0 auto;
   background: #F5F5FA;
 }
 .footer__wrapper {
+  padding: 30px 0;
+  border-top: 2px solid #E6E6F0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 21px;
-  padding: 0 160px;
+  margin: 0 160px;
 }
 .footer__box {
   display: flex;
@@ -1230,14 +1236,15 @@
 
 @media screen and (max-width: 1440px) {
   .footer__wrapper {
-    padding: 0 60px;
+    margin: 0 60px;
   }
 }
 @media screen and (max-width: 375px) {
   .footer__wrapper {
+    border: none;
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0 30px;
+    margin: 0 30px;
   }
   .footer__box {
     display: flex;

@@ -1,9 +1,9 @@
 @import "mixins";
 
 .header {
-  padding: 0 160px;
+  margin: 0 auto;
+  padding: 50px 0 60px;
   z-index: 99;
-  margin-bottom: 60px;
   position: relative;
 
   &__opacity {
@@ -11,6 +11,7 @@
   }
 
   &__wrapper {
+    padding: 0 160px;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto;
@@ -124,7 +125,10 @@
 
 @media screen and (max-width: 1440px) {
   .header {
-    padding: 0 60px;
+    padding: 50px 0 60px;
+    &__wrapper {
+      padding: 0 60px;
+    }
   }
 }
 
@@ -181,7 +185,6 @@
     }
 
     &__logo {
-
       &__box {
         @include width(70px);
         grid-column: 1 / 2;
@@ -260,6 +263,5 @@
         background-color: #323264;
       }
     }
-
   }
 }

@@ -2,4 +2,145 @@
 @import "_mixins";
 @import "general";
 @import "header";
+@import "publications";
+@import "footer";
 
+.gdpr {
+  margin: 0 auto;
+
+  &__wrapper {
+    padding: 0 280px 60px;
+    @include flex__column;
+    object-fit: cover;
+  }
+
+  &__box {
+    @include width(1360px);
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    object-fit: cover;
+  }
+
+  &__title {
+    @include paragraph(700, 30px, 37px, #323264);
+    margin-bottom: 15px;
+  }
+
+  &__date {
+    @include paragraph(700, 12px, 15px, #B3B3BA);
+    margin-bottom: 30px;
+  }
+
+  &__separator {
+    @include width(1360px);
+    border-bottom: 4px solid #E6E6F0;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    @include paragraph(400, 16px, 26px, #000000);
+    margin-bottom: 30px;
+  }
+
+  &__title-big {
+    @include title;
+    margin-bottom: 30px;
+  }
+
+  &__title-list {
+    @include paragraph(700, 22px, 27px, #46466E);
+    margin-bottom: 15px;
+  }
+
+  &__container {
+    @include width(640px);
+    margin-bottom: 30px;
+    align-self: center;
+
+    &__text {
+      @include paragraph(400, 14px, 22px, #B3B3BA);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__footer {
+    //@include flex__row;
+    //justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3,42px);
+    gap: 10px;
+
+    &__link {
+      display: block;
+      padding: 9px;
+      background: #F5F5FA;
+      border-radius: 12px;
+
+      &__img {
+        display: block;
+        height: 24px;
+        width: 24px;
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .gdpr {
+
+    &__wrapper {
+      padding: 0 180px 60px;
+    }
+
+    &__box {
+      @include width(1080px);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .gdpr {
+
+    &__wrapper {
+      padding: 0 60px 60px;
+    }
+
+    &__box {
+      @include width(904px);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gdpr {
+
+    &__box {
+      @include width(648px);
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .gdpr {
+    &__wrapper {
+      padding: 0 30px 60px;
+    }
+
+    &__box {
+      @include width(315px);
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__title-big {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+}

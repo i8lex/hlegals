@@ -53,11 +53,16 @@
       &__title {
         @include h4Reg(#24A3FF);
         margin-bottom: 15px;
+
+        &:hover{
+          color: #F0145A;
+          transition: 300ms ease-in-out;
+        }
       }
 
       &__date {
         @include paragraph(700, 12px, 15px, #B3B3BA);
-        margin-bottom: 15px;
+        margin: 15px 0;
       }
 
       &__separator {
