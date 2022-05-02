@@ -246,7 +246,7 @@
 
 @media screen and (max-width: 768px) {
   .home {
-    padding: 0;
+    padding: 0 0 60px;
 
     &__bgr {
       @include width(893.28px);
@@ -276,14 +276,18 @@
 
         &:first-child {
           display: block;
-          margin-right: -520px;
-          transform: translateX(50px);
           flex-direction: row;
-          max-width: 1400px;
-          //overflow: hidden;
-          //text-overflow: clip;
-        }
+          max-width: 730px;
+          margin-left: 60px;
+          white-space: nowrap;
+          overflow-x: scroll;
+          overflow-y: hidden;
+          -webkit-overflow-scrolling: touch;
 
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
 
         &__list {
           margin-right: 30px;
@@ -348,8 +352,8 @@
         max-width: 315px;
 
         &:first-child {
-          margin-right: -720px;
-          transform: translateX(0px);
+          max-width: 350px;
+          margin-left: 30px;
         }
 
         &__list {
