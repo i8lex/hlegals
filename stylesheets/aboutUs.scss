@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import "_mixins";
+@import "general";
+@import "header";
+@import "achievements";
+@import "footer";
+
+.about {
+  margin: 0 auto;
+
+  &__wrapper {
+    padding: 0 280px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  &__boxOne {
+    @include width(942px);
+  }
+
+  &__boxTwo {
+    @include width(362px);
+    padding-left: 30px;
+    border-left: 4px solid #E6E6F0;
+  }
+
+  &__cover {
+    @include width(1920px);
+
+    &__box {
+      position: relative;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__bigTitle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-44%, -50%);
+    opacity: 0.8;
+    text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
+    @include paragraph(700, 96px, 117px, #FFFFFF);
+    letter-spacing: 63px;
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: 28px;
+
+    &:nth-child(2) {
+      margin-left: 30px;
+    }
+  }
+
+  &__text {
+    @include paragraph(400, 19px,30px, #000000);
+  }
+
+  &__num {
+    @include title;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 10px;
+
+    &:nth-child(3)::before {
+      content: url("../images/icon/group.svg");
+      margin-right: 12px;
+      width: 32px;
+      height: 32px;
+    }
+
+    &:nth-child(5)::before {
+      content: url("../images/icon/probono.svg");
+      margin-right: 12px;
+      width: 32px;
+      height: 32px;
+    }
+
+    &::before {
+      content: url("../images/icon/experience.svg");
+      margin-right: 12px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__numtext {
+    @include paragraph(400, 16px, 20px, #323264);
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .about {
+    &__wrapper {
+      padding: 0 180px;
+      grid-template-columns: 1.5fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about {
+    &__wrapper {
+      padding: 0 60px;
+      grid-template-columns: 1.1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    &__wrapper {
+      padding: 0 60px;
+      grid-template-columns: 1fr;
+    }
+
+    &__title {
+      &:nth-child(2) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about {
+    &__wrapper {
+      padding: 0 30px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+}

@@ -92,7 +92,7 @@ img {
 .header__wrapper {
   padding: 0 160px;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
   justify-items: flex-end;
 }
@@ -213,6 +213,11 @@ img {
     padding: 0 60px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .header__wrapper {
+    grid-template-columns: 1fr 1.2fr;
+  }
+}
 @media screen and (max-width: 768px) {
   .header__wrapper {
     grid-template-columns: 1fr;
@@ -248,7 +253,7 @@ img {
   .header__wrapper {
     padding: 0 30px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
     justify-items: flex-end;
     grid-gap: 0;
@@ -257,6 +262,8 @@ img {
   .header__logo__box {
     width: 100%;
     max-width: 70px;
+    display: grid;
+    grid-template-columns: 1fr 160px;
     grid-column: 1/2;
     grid-row: 2/3;
   }
@@ -269,11 +276,9 @@ img {
     margin-left: 4px;
   }
   .header__logo__link::before {
-    display: inline-flex;
-    align-items: center;
     content: url("../images/icon/slash_mobile.svg");
     width: 100%;
-    max-width: 21px;
+    max-width: 12px;
     margin-right: 4px;
   }
   .header__facebook {
@@ -667,6 +672,24 @@ img {
 }
 .publications__btn:active {
   background: #006CCF;
+}
+
+@media screen and (max-width: 768px) {
+  .publications__box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .publications__btn {
+    grid-column: 1/3;
+  }
+}
+@media screen and (max-width: 375px) {
+  .publications__box {
+    grid-template-columns: 1fr;
+  }
+  .publications__btn {
+    grid-column: 1/2;
+    margin-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=publication-page.css.map */

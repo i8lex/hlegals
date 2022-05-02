@@ -13,7 +13,7 @@
   &__wrapper {
     padding: 0 160px;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     justify-items: flex-end;
   }
@@ -132,6 +132,12 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .header__wrapper {
+    grid-template-columns: 1fr 1.2fr;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header {
 
@@ -177,7 +183,7 @@
     &__wrapper {
       padding: 0 30px;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 2fr 1fr;
       grid-template-rows: auto;
       justify-items: flex-end;
       grid-gap: 0;
@@ -187,6 +193,8 @@
     &__logo {
       &__box {
         @include width(70px);
+        display: grid;
+        grid-template-columns: 1fr 160px;
         grid-column: 1 / 2;
         grid-row: 2 / 3;
       }
@@ -196,10 +204,8 @@
         margin-left: 4px;
 
         &::before {
-          display: inline-flex;
-          align-items: center;
           content: url("../images/icon/slash_mobile.svg");
-          @include width(21px);
+          @include width(12px);
           margin-right: 4px;
         }
       }
