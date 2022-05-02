@@ -119,7 +119,7 @@ img {
   line-height: 44px;
   color: #323264;
   margin-left: 4px;
-  transform: translateY(-1px);
+  transform: translateY(-2.5px);
 }
 .header__logo__link::before {
   display: inline-flex;
@@ -716,6 +716,12 @@ img {
     padding: 0 60px;
     grid-template-columns: 1.1fr 1fr;
   }
+  .about__bigTitle {
+    font-size: 80px;
+    line-height: 105px;
+    letter-spacing: 68px;
+    transform: translate(-44%, -50%);
+  }
 }
 @media screen and (max-width: 768px) {
   .about__wrapper {
@@ -725,6 +731,12 @@ img {
   .about__title:nth-child(2) {
     margin-left: 0;
   }
+  .about__bigTitle {
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: 64px;
+    transform: translate(-42%, -50%);
+  }
 }
 @media screen and (max-width: 375px) {
   .about__wrapper {
@@ -733,6 +745,12 @@ img {
   .about__title {
     font-size: 30px;
     line-height: 37px;
+  }
+  .about__bigTitle {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 13px;
+    transform: translate(-46%, -50%);
   }
 }
 

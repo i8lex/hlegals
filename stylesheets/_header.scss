@@ -35,7 +35,7 @@
       align-items: flex-start;
       @include paragraph(400, 36px, 44px, #323264);
       margin-left: 4px;
-      transform: translateY(-1px);
+      transform: translateY(-2.5px);
 
       &::before {
         display: inline-flex;
