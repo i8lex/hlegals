@@ -43,6 +43,25 @@
     margin-bottom: 30px;
   }
 
+  &__list {
+    margin-bottom: 15px;
+    &__text {
+      @include paragraph(400, 18px, 26px, #000000);
+      list-style-type: none;
+      margin-bottom: 15px;
+
+      &:before {
+        content: "1.";
+        @include paragraph(700, 18px, 26px, #F0145A);
+        margin-right: 10px;
+      }
+
+      &:last-child:before {
+        content: "2.";
+      }
+    }
+  }
+
   &__title-big {
     @include title;
     margin-bottom: 30px;

@@ -336,181 +336,6 @@ img {
     background-color: #323264;
   }
 }
-.publications {
-  padding: 30px 0;
-  background: #F5F5FA;
-}
-.publications__wrapper {
-  max-width: 1600px;
-  padding: 0 160px;
-}
-.publications__link {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #24A3FF;
-  margin-bottom: 10px;
-}
-.publications__link:hover {
-  color: #F0145A;
-  transition: color 300ms ease-in-out;
-}
-.publications__link:hover svg {
-  stroke: #F0145A;
-  transition: stroke 300ms ease-in-out;
-}
-.publications__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 46px;
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 30px;
-}
-.publications__box {
-  max-width: 1600px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-.publications__box__card {
-  max-width: 513.33px;
-  background-color: #FFFFFF;
-  border-radius: 8px;
-}
-.publications__box__card__container {
-  padding: 30px 30px 0;
-}
-.publications__box__card__img {
-  max-width: 513.33px;
-  margin-bottom: 30px;
-}
-.publications__box__card__title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #24A3FF;
-  margin-bottom: 15px;
-}
-.publications__box__card__title:hover {
-  color: #F0145A;
-  transition: 300ms ease-in-out;
-}
-.publications__box__card__date {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  color: #B3B3BA;
-  margin: 15px 0;
-}
-.publications__box__card__separator {
-  width: 100%;
-  max-width: 453.33px;
-  border-bottom: 4px solid #E6E6F0;
-  margin-bottom: 15px;
-}
-.publications__box__card__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #000000;
-  padding-bottom: 30px;
-}
-
-@media screen and (max-width: 1440px) {
-  .publications {
-    padding: 30px 0;
-    background: #F5F5FA;
-  }
-  .publications__wrapper {
-    max-width: 1300px;
-    padding: 0 60px;
-  }
-  .publications__box {
-    max-width: 1300px;
-  }
-  .publications__box__card {
-    max-width: 420px;
-  }
-  .publications__box__card__separator {
-    width: 100%;
-    max-width: 360px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .publications__wrapper {
-    max-width: 904px;
-    padding: 0 60px;
-  }
-  .publications__box {
-    max-width: 884px;
-  }
-  .publications__box__card {
-    max-width: 281.33px;
-  }
-  .publications__box__card__separator {
-    width: 100%;
-    max-width: 221.33px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .publications__box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 30px;
-  }
-  .publications__box__card {
-    max-width: 309px;
-  }
-  .publications__box__card:last-child {
-    max-width: 648px;
-    grid-column: 1/3;
-    grid-row: 2/3;
-  }
-  .publications__box__card__separator {
-    width: 100%;
-    max-width: 588px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .publications__wrapper {
-    padding: 0 30px;
-    max-width: 315px;
-  }
-  .publications__title {
-    font-size: 30px;
-    line-height: 37px;
-  }
-  .publications__box {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 30px;
-  }
-  .publications__box__card {
-    max-width: 315px;
-  }
-  .publications__box__card:last-child {
-    max-width: 315px;
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  .publications__box__card__separator {
-    width: 100%;
-    max-width: 255px;
-  }
-}
 .footer {
   margin: 0 auto;
   background: #F5F5FA;
@@ -625,79 +450,22 @@ img {
     justify-self: center;
   }
 }
-.gdpr {
+.footer__wrapper {
+  border: none;
+}
+
+.team {
   margin: 0 auto;
 }
-.gdpr__wrapper {
-  padding: 0 280px 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  object-fit: cover;
+.team__wrapper {
+  padding: 0 160px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 60px;
+  margin-bottom: 60px;
 }
-.gdpr__box {
-  width: 100%;
-  max-width: 1360px;
-  overflow: hidden;
-  border-radius: 12px;
-  margin-bottom: 30px;
-  object-fit: cover;
-}
-.gdpr__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
-  color: #323264;
-  margin-bottom: 15px;
-}
-.gdpr__date {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  color: #B3B3BA;
-  margin-bottom: 30px;
-}
-.gdpr__separator {
-  width: 100%;
-  max-width: 1360px;
-  border-bottom: 4px solid #E6E6F0;
-  margin-bottom: 30px;
-}
-.gdpr__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #000000;
-  margin-bottom: 30px;
-}
-.gdpr__list {
-  margin-bottom: 15px;
-}
-.gdpr__list__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-  list-style-type: none;
-  margin-bottom: 15px;
-}
-.gdpr__list__text:before {
-  content: "1.";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #F0145A;
-  margin-right: 10px;
-}
-.gdpr__list__text:last-child:before {
-  content: "2.";
-}
-.gdpr__title-big {
+.team__title {
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
@@ -705,89 +473,94 @@ img {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 30px;
+  grid-column: 1/4;
+  max-width: 1360px;
+  justify-self: center;
 }
-.gdpr__title-list {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-  color: #46466E;
+.team__box__image {
+  max-width: 594px;
   margin-bottom: 15px;
 }
-.gdpr__container {
-  width: 100%;
-  max-width: 640px;
-  margin-bottom: 30px;
-  align-self: center;
+.team__box__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
 }
-.gdpr__container__text {
+.team__box__container__link {
+  width: 32px;
+  height: 32px;
+  padding: 7.5px 12.5px;
+  background: #EDEDF7;
+  border-radius: 50%;
+}
+.team__box__container__link__svg {
+  stroke: #24A3FF;
+}
+.team__box__container__link__svg:hover {
+  stroke: #F0145A;
+  transition: 300ms ease-in-out;
+}
+.team__box__name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+  margin-bottom: 5px;
+}
+.team__box__name:hover {
+  color: #F0145A;
+  transition: 300ms ease-in-out;
+}
+.team__box__position {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: #B3B3BA;
-  text-align: center;
-  margin-bottom: 30px;
-}
-.gdpr__footer {
-  display: grid;
-  grid-template-columns: repeat(3, 42px);
-  gap: 10px;
-}
-.gdpr__footer__link {
-  display: block;
-  padding: 9px;
-  background: #F5F5FA;
-  border-radius: 12px;
-}
-.gdpr__footer__link__img {
-  display: block;
-  height: 24px;
-  width: 24px;
-  align-self: center;
 }
 
 @media screen and (max-width: 1440px) {
-  .gdpr__wrapper {
-    padding: 0 180px 60px;
+  .team__wrapper {
+    padding: 0 60px;
   }
-  .gdpr__box {
-    width: 100%;
+  .team__title {
     max-width: 1080px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .gdpr__wrapper {
-    padding: 0 60px 60px;
-  }
-  .gdpr__box {
-    width: 100%;
-    max-width: 904px;
+  .team__title {
+    max-width: 664px;
   }
 }
 @media screen and (max-width: 768px) {
-  .gdpr__box {
-    width: 100%;
+  .team__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team__title {
     max-width: 648px;
+    grid-column: 1/3;
   }
 }
 @media screen and (max-width: 375px) {
-  .gdpr__wrapper {
-    padding: 0 30px 60px;
+  .team__wrapper {
+    padding: 0 30px;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
   }
-  .gdpr__box {
-    width: 100%;
+  .team__title {
     max-width: 315px;
-  }
-  .gdpr__title {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .gdpr__title-big {
+    grid-column: 1/2;
     font-size: 30px;
     line-height: 37px;
   }
+  .team__box__container__link {
+    padding: 6.5px 11.5px;
+  }
+  .team__box__container__link__svg:first-child {
+    transform: rotate(270deg);
+  }
 }
 
-/*# sourceMappingURL=publication-entry.css.map */
+/*# sourceMappingURL=team.css.map */

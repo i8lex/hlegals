@@ -103,15 +103,9 @@
       align-items: flex-start;
 
       &:before {
-        content: url("../images/icon/dot-separator.svg");
-        display: inline-flex;
-        width: 3px;
-        height: 3px;
-        //padding: 3px;
-        //border-radius: 50%;
-        //background-color: #F0145A;
+        content: "•";
+        @include paragraph(700, 18px,26px, #F0145A);
         margin-right: 8px;
-        //align-self: center;
       }
     }
   }
