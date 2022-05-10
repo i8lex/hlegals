@@ -3,7 +3,7 @@
 .home {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0 0 12px 12px;
-  padding: 0 60px 60px;
+  padding: 60px 0 60px;
   position: relative;
 
   &__shadowOne {
@@ -20,18 +20,20 @@
     border-radius: 0 0 12px 12px;
   }
 
-  &__wrapper {
-    @include flex__column;
-  }
-
   &__bgr {
     margin: 0 auto 60px;
-    position: relative;
+    @include flex__column;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     @include width(872px);
+
 
     &__symbol {
       @include width(872px);
       max-height: 100%;
+      z-index: -1;
     }
 
     &__scroll {
@@ -39,10 +41,11 @@
       position: absolute;
       @include positionBottom($bottom, 50%);
       bottom: 30px;
-      z-index: 5;
+      z-index: 99;
 
       &-svg{
         stroke: #FFFFFF;
+        z-index: 99;
 
         &:hover {
           stroke: #F0145A;
@@ -52,11 +55,13 @@
     }
 
     &__text {
+      display: block;
+      position: relative;
+      margin: 0 auto 60px;
+      padding: 361px 0 477px;
       @include paragraph(700, 38px, 46px, #FFFFFF);
-      text-align: center;
-      position: absolute;
-      @include positionTop($top, $left);
       @include width(600px);
+      z-index: 1;
     }
 
   }
@@ -180,13 +185,16 @@
 
 @media screen and (max-width: 1440px) {
   .home {
-
     &__bgr {
       margin: 0 auto 60px;
-      @include width(697px);
 
       &__symbol {
         @include width(697px);
+        margin: 0 auto;
+      }
+
+      &__text {
+        padding: 261px 0 377px;
       }
     }
 
@@ -209,12 +217,16 @@
 
 @media screen and (max-width: 1024px) {
   .home {
-
     &__bgr {
       @include width(670px);
 
       &__symbol {
-        @include width(670px);
+        //@include width(670px);
+        //height: 768px;
+      }
+
+      &__text {
+        padding: 245px 0 361px;
       }
     }
 
@@ -254,6 +266,11 @@
 
       &__symbol {
         @include width(893.28px);
+        height: 1024px;
+      }
+
+      &__text {
+        padding: 329px 0 469px;
       }
     }
 
@@ -314,7 +331,7 @@
 
 @media screen and (max-width: 375px) {
   .home {
-    padding: 0;
+    padding: 15px 0;
     @include width(375px);
 
     &__opacity {
@@ -333,10 +350,13 @@
 
       &__text {
         max-width: 315px;
+        padding: 138px 0 231px;
+        text-align: center;
       }
 
       &__symbol {
         @include width(523.4px);
+        height: 600px;
       }
     }
 

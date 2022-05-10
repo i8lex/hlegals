@@ -621,19 +621,10 @@ img {
   padding-left: 30px;
   border-left: 4px solid #E6E6F0;
 }
-.about__cover {
-  width: 100%;
-  max-width: 1920px;
-}
-.about__cover__box {
-  position: relative;
-  margin-bottom: 60px;
-}
 .about__bigTitle {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-44%, -50%);
+  display: block;
+  position: relative;
+  padding: 236px 0 231px;
   opacity: 0.8;
   text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
   font-style: normal;
@@ -642,6 +633,21 @@ img {
   line-height: 117px;
   color: #FFFFFF;
   letter-spacing: 63px;
+  text-align: center;
+  margin-bottom: 60px;
+  z-index: 2;
+}
+.about__bigTitle__box {
+  position: relative;
+}
+.about__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  object-fit: cover;
 }
 .about__title {
   font-style: normal;
@@ -710,6 +716,13 @@ img {
     padding: 0 180px;
     grid-template-columns: 1.5fr 1fr;
   }
+  .about__bigTitle {
+    padding: 163px 0 158px;
+  }
+  .about__cover {
+    width: 100%;
+    max-width: 1440px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .about__wrapper {
@@ -717,10 +730,13 @@ img {
     grid-template-columns: 1.1fr 1fr;
   }
   .about__bigTitle {
+    padding: 103px 0 103.47px;
     font-size: 80px;
     line-height: 105px;
-    letter-spacing: 68px;
-    transform: translate(-44%, -50%);
+  }
+  .about__cover {
+    width: 100%;
+    max-width: 1024px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -732,10 +748,14 @@ img {
     margin-left: 0;
   }
   .about__bigTitle {
+    padding: 89px 0 89px;
     font-size: 46px;
     line-height: 56px;
     letter-spacing: 64px;
-    transform: translate(-42%, -50%);
+  }
+  .about__cover {
+    width: 100%;
+    max-width: 768px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -747,10 +767,14 @@ img {
     line-height: 37px;
   }
   .about__bigTitle {
+    padding: 35px 0 35px;
     font-size: 36px;
     line-height: 44px;
     letter-spacing: 13px;
-    transform: translate(-46%, -50%);
+  }
+  .about__cover {
+    width: 100%;
+    max-width: 375px;
   }
 }
 

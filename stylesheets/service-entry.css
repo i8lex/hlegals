@@ -307,6 +307,7 @@ img {
   width: 100%;
   max-width: 130px;
   align-items: center;
+  justify-self: start;
   grid-column: 1/2;
   grid-row: 1/3;
 }
@@ -527,7 +528,6 @@ img {
   background: #F5F5FA;
 }
 .publications__wrapper {
-  max-width: 1600px;
   padding: 0 160px;
 }
 .publications__link {
@@ -619,7 +619,6 @@ img {
     background: #F5F5FA;
   }
   .publications__wrapper {
-    max-width: 1300px;
     padding: 0 60px;
   }
   .publications__box {
@@ -635,7 +634,6 @@ img {
 }
 @media screen and (max-width: 1024px) {
   .publications__wrapper {
-    max-width: 904px;
     padding: 0 60px;
   }
   .publications__box {
@@ -672,7 +670,6 @@ img {
 @media screen and (max-width: 375px) {
   .publications__wrapper {
     padding: 0 30px;
-    max-width: 315px;
   }
   .publications__title {
     font-size: 30px;

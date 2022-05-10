@@ -336,177 +336,6 @@ img {
     background-color: #323264;
   }
 }
-.publications {
-  padding: 30px 0;
-  background: #F5F5FA;
-}
-.publications__wrapper {
-  padding: 0 160px;
-}
-.publications__link {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #24A3FF;
-  margin-bottom: 10px;
-}
-.publications__link:hover {
-  color: #F0145A;
-  transition: color 300ms ease-in-out;
-}
-.publications__link:hover svg {
-  stroke: #F0145A;
-  transition: stroke 300ms ease-in-out;
-}
-.publications__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 46px;
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 30px;
-}
-.publications__box {
-  max-width: 1600px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-.publications__box__card {
-  max-width: 513.33px;
-  background-color: #FFFFFF;
-  border-radius: 8px;
-}
-.publications__box__card__container {
-  padding: 30px 30px 0;
-}
-.publications__box__card__img {
-  max-width: 513.33px;
-  margin-bottom: 30px;
-}
-.publications__box__card__title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #24A3FF;
-  margin-bottom: 15px;
-}
-.publications__box__card__title:hover {
-  color: #F0145A;
-  transition: 300ms ease-in-out;
-}
-.publications__box__card__date {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  color: #B3B3BA;
-  margin: 15px 0;
-}
-.publications__box__card__separator {
-  width: 100%;
-  max-width: 453.33px;
-  border-bottom: 4px solid #E6E6F0;
-  margin-bottom: 15px;
-}
-.publications__box__card__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #000000;
-  padding-bottom: 30px;
-}
-
-@media screen and (max-width: 1440px) {
-  .publications {
-    padding: 30px 0;
-    background: #F5F5FA;
-  }
-  .publications__wrapper {
-    padding: 0 60px;
-  }
-  .publications__box {
-    max-width: 1300px;
-  }
-  .publications__box__card {
-    max-width: 420px;
-  }
-  .publications__box__card__separator {
-    width: 100%;
-    max-width: 360px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .publications__wrapper {
-    padding: 0 60px;
-  }
-  .publications__box {
-    max-width: 884px;
-  }
-  .publications__box__card {
-    max-width: 281.33px;
-  }
-  .publications__box__card__separator {
-    width: 100%;
-    max-width: 221.33px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .publications__box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 30px;
-  }
-  .publications__box__card {
-    max-width: 309px;
-  }
-  .publications__box__card:last-child {
-    max-width: 648px;
-    grid-column: 1/3;
-    grid-row: 2/3;
-  }
-  .publications__box__card__separator {
-    width: 100%;
-    max-width: 588px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .publications__wrapper {
-    padding: 0 30px;
-  }
-  .publications__title {
-    font-size: 30px;
-    line-height: 37px;
-  }
-  .publications__box {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 30px;
-  }
-  .publications__box__card {
-    max-width: 315px;
-  }
-  .publications__box__card:last-child {
-    max-width: 315px;
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  .publications__box__card__separator {
-    width: 100%;
-    max-width: 255px;
-  }
-}
 .footer {
   margin: 0 auto;
   background: #F5F5FA;
@@ -621,34 +450,136 @@ img {
     justify-self: center;
   }
 }
-.publications__switcher {
-  width: 233px;
-  height: 42px;
-  display: flex;
-  background: #E6E6F0;
-  border-radius: 12px;
-  padding: 2px;
-  margin: 0 auto 30px;
+.footer__wrapper {
+  border: none;
 }
-.publications__switcher__link {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #323264;
-  padding: 8px 30px 10px 30px;
+
+.contact {
+  margin: 0 auto;
 }
-.publications__switcher__link__active {
-  background: #FFFFFF;
-  border-radius: 10px;
-}
-.publications__box {
+.contact__wrapper {
+  margin-bottom: 60px;
+  padding: 0 280px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 30px;
-  margin-bottom: 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
 }
-.publications__btn {
+.contact__box-one, .contact__box-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: flex-start;
+  max-width: 650px;
+}
+.contact__box-two {
+  padding: 30px;
+  background-color: #F5F5FA;
+  border-radius: 12px;
+}
+.contact__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: #323264;
+}
+.contact__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: #24A3FF;
+  margin-top: 15px;
+}
+.contact__separator {
+  margin: 30px 0;
+  height: 4px;
+  width: 100%;
+  max-width: 650px;
+  background-color: #E6E6F0;
+}
+.contact__facebook {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: flex-start;
+}
+.contact__facebook:hover p {
+  color: #F0145A;
+  transition: 300ms ease-in-out;
+}
+.contact__facebook:hover svg {
+  fill: #F0145A;
+  transition: 300ms ease-in-out;
+}
+.contact__facebook__text {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+.contact__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+.contact__lilTitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  margin-bottom: 15px;
+}
+.contact__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.contact__input {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  padding: 15px;
+}
+.contact__input:focus {
+  outline: none;
+  border: 1px solid #24A3FF;
+}
+.contact__input:invalid {
+  border: 1px solid #FF0000;
+  color: #FF0000;
+}
+.contact__input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #B3B3BA;
+}
+.contact__input::placeholder:invalid {
+  color: #FF0000;
+}
+.contact__text-area {
+  min-height: 130px;
+}
+.contact__btn {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -659,33 +590,36 @@ img {
   box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
   border-radius: 12px;
   padding: 18px 30px;
-  grid-column: 1/4;
-  align-self: center;
-  justify-self: center;
+  border: none;
+  cursor: pointer;
 }
-.publications__btn:hover {
+.contact__btn:hover {
   background: #0085FF;
 }
-.publications__btn:active {
+.contact__btn:active {
   background: #006CCF;
 }
 
-@media screen and (max-width: 768px) {
-  .publications__box {
-    grid-template-columns: repeat(2, 1fr);
+@media screen and (max-width: 1440px) {
+  .contact__wrapper {
+    padding: 0 180px;
   }
-  .publications__btn {
-    grid-column: 1/3;
+}
+@media screen and (max-width: 1024px) {
+  .contact__wrapper {
+    padding: 0 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact__wrapper {
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 375px) {
-  .publications__box {
-    grid-template-columns: 1fr;
-  }
-  .publications__btn {
-    grid-column: 1/2;
+  .contact__wrapper {
+    grid-gap: 30px;
     margin-bottom: 30px;
   }
 }
 
-/*# sourceMappingURL=publication-page.css.map */
+/*# sourceMappingURL=contact.css.map */
