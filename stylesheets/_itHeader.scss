@@ -101,19 +101,47 @@
   }
 
   &__link {
+    position: relative;
     @include paragraph(700, 18px, 21px, #FFFFFF);
     text-align: right;
+    padding-bottom: 3px;
+    transition: 300ms ease-in-out;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #FFFFFF;
+      transform: scaleX(0);
+      transform-origin: top right;
+      transition: 300ms ease-in-out;
+      //opacity: 0;
+    }
 
     &:hover {
-      text-decoration: underline;
-      transition: color 300ms ease-in-out;
+      &:after {
+        transform: scaleX(1);
+        transform-origin: top left;
+        transition: 300ms ease-in-out;
+        //opacity: 1;
+      }
     }
+
 
     &:active,
     &__active {
       color: #F0145A;
-      text-decoration: underline;
       transition: color 300ms ease-in-out;
+      &:after {
+        background-color: #F0145A;
+        transition: 300ms ease-in-out;
+        opacity: 1;
+      }
+
     }
   }
 
