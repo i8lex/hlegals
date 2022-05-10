@@ -397,7 +397,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  color: #24A3FF;
+  color: #FFFFFF;
   text-align: right;
   padding-bottom: 3px;
   transition: 300ms ease-in-out;
@@ -410,7 +410,7 @@ img {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #24A3FF;
+  background-color: #FFFFFF;
   transform: scaleX(0);
   transform-origin: top right;
   transition: 300ms ease-in-out;
@@ -420,14 +420,29 @@ img {
   transform-origin: top left;
   transition: 300ms ease-in-out;
 }
-.header__link:active, .header__link__active {
+.header__link:active {
   color: #F0145A;
   transition: color 300ms ease-in-out;
 }
-.header__link:active:after, .header__link__active:after {
+.header__link:active:after {
   background-color: #F0145A;
   transition: 300ms ease-in-out;
-  opacity: 1;
+  transform: scaleX(1);
+}
+.header__link__active {
+  color: #F0145A;
+}
+.header__link__active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #F0145A;
+  transition: 300ms ease-in-out;
+  transform: scaleX(1);
 }
 .header__burger {
   display: none;
