@@ -102,7 +102,7 @@
 
   &__link {
     position: relative;
-    @include paragraph(700, 18px, 21px, #FFFFFF);
+    @include paragraph(700, 18px, 21px, #24A3FF);
     text-align: right;
     padding-bottom: 3px;
     transition: 300ms ease-in-out;
@@ -115,7 +115,7 @@
       display: block;
       width: 100%;
       height: 2px;
-      background-color: #FFFFFF;
+      background-color: #24A3FF;
       transform: scaleX(0);
       transform-origin: top right;
       transition: 300ms ease-in-out;
