@@ -1,25 +1,14 @@
 @import "mixins";
 
 .achievements {
-  padding: 30px 0 0;
+  padding: 30px 0;
   margin: 0 auto;
   background: #F5F5FA;
 
-  &__wrapper {
-    @include flex__column;
-    gap: 30px;
-    align-items: center;
-  }
-
   &__title {
     @include h3Caps( 14px, 17px, #323264);
-    grid-column: 1 / 5;
     text-align: center;
-  }
-
-  &__box {
-    @include flex__row;
-    gap: 40px;
+    margin-bottom: 30px;
   }
 
   &__link {
@@ -29,6 +18,10 @@
     &__award,
     &__market,
     &__ulf {
+      display: block;
+      margin: 0 40px;
+      width: 370px;
+      height: 110px;
       background-color: #FFFFFF;
     }
 
@@ -50,21 +43,21 @@
   }
 
   &__switcher {
-    margin: 0 auto;
+    margin-top: 30px;
     @include flex__row;
     justify-content: center;
     gap: 15px;
+    list-style-type: none;
+    cursor: pointer;
+    //padding-bottom: 30px;
 
-    &__circle {
+    li {
       @include width(16px);
-      padding: 8px;
-      border-radius: 100%;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
       background: #24A3FF;
       opacity: 0.2;
-
-      &:nth-child(n+4) {
-        display: none;
-      }
 
       &:active {
         opacity: 1;
@@ -73,11 +66,35 @@
       &:hover {
         opacity: 0.6;
       }
+
+      button {
+        opacity: 0;
+      }
     }
 
-    &__circle-active {
-      opacity: 1;
-    }
+    //&__circle {
+    //  @include width(16px);
+    //  padding: 8px;
+    //  border-radius: 100%;
+    //  background: #24A3FF;
+    //  opacity: 0.2;
+    //
+    //  &:nth-child(n+4) {
+    //    display: none;
+    //  }
+    //
+    //  &:active {
+    //    opacity: 1;
+    //  }
+    //
+    //  &:hover {
+    //    opacity: 0.6;
+    //  }
+    //}
+    //
+    //&__circle-active {
+    //  opacity: 1;
+    //}
   }
 }
 
@@ -85,6 +102,13 @@
   .achievements {
     &__link {
       @include width(300px);
+
+      &__legal,
+      &__award,
+      &__market,
+      &__ulf {
+        width: 300px;
+      }
 
       &__legal {
         padding: 25px 110px;
@@ -110,6 +134,13 @@
     &__link {
       @include width(196px);
 
+      &__legal,
+      &__award,
+      &__market,
+      &__ulf {
+        width: 196px;
+      }
+
       &__legal {
         padding: 25px 58px;
       }
@@ -133,6 +164,14 @@
   .achievements {
     &__link {
       @include width(132px);
+
+      &__legal,
+      &__award,
+      &__market,
+      &__ulf {
+        width: 132px;
+        height: 90px;
+      }
 
       &__legal {
         padding: 25px 39px;
@@ -159,26 +198,32 @@
       @include width(255px);
 
       &__legal {
-        padding: 24px 100px 25px 101px;
+        padding: 24px 100px 25px 90px;
       }
 
+      &__award {
+        padding: 25px 61px;
+      }
+
+      &__market {
+        padding: 25px 50px;
+      }
+
+      &__ulf {
+        padding: 25px 61px;
+      }
+
+      &__legal,
       &__award,
       &__market,
       &__ulf {
-        display: none;
-      }
-    }
-
-    &__switcher {
-      &__circle {
-        &:nth-child(n+4) {
-          display: flex;
-        }
+        width: 227px;
+        margin: 0 20px;
       }
     }
 
     &__separator {
-
+      margin: 30px auto 0;
       @include width(315px);
       border-bottom: 2px solid #E6E6F0;
     }

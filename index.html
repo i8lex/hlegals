@@ -5,13 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
     <link rel="stylesheet" href="./stylesheets/main.css">
     <title>hlegals</title>
 </head>
 <body>
-
-
-
     <section class="home">
         <div class="home__opacity"></div>
         <div class="container">
@@ -171,7 +170,9 @@
 
     <section class="member">
         <div class="container">
-            <div class="member__wrapper">
+            <div class="slider">
+                <div>
+                    <div class="member__wrapper">
                 <div class="member__img">
                     <img class="member__img__image" src="./images/photo/Team-1.jpg" alt="Alexander Alexandrovsky">
                 </div>
@@ -191,11 +192,58 @@
                     <p class="member__box__state">Керуючий партнер</p>
                 </div>
             </div>
-            <div class="member__switcher">
-                <div class="member__switcher__circle member__switcher__circle-active"></div>
-                <div class="member__switcher__circle"></div>
-                <div class="member__switcher__circle"></div>
+                </div>
+                <div>
+                    <div class="member__wrapper">
+                        <div class="member__img">
+                            <img class="member__img__image" src="./images/photo/Team-1.jpg" alt="Alexander Alexandrovsky">
+                        </div>
+                        <div class="member__box">
+                            <a href="#" class="member__box__link">команда
+                                <svg class="arrow-svg" width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 1L6 5.5L1.5 10"  stroke-width="2"/>
+                                </svg>
+                            </a>
+                            <h6 class="member__box__title">
+                                Ми звикли брати на себе відповідальність
+                                та завжди гарантуємо чесну,
+                                вчасну допомогу, навіть у ситуаціях,
+                                коли більшість безсилі.
+                            </h6>
+                            <p class="member__box__name">Олександр Олександровський</p>
+                            <p class="member__box__state">Керуючий партнер</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="member__wrapper">
+                        <div class="member__img">
+                            <img class="member__img__image" src="./images/photo/Team-1.jpg" alt="Alexander Alexandrovsky">
+                        </div>
+                        <div class="member__box">
+                            <a href="#" class="member__box__link">команда
+                                <svg class="arrow-svg" width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.5 1L6 5.5L1.5 10"  stroke-width="2"/>
+                                </svg>
+                            </a>
+                            <h6 class="member__box__title">
+                                Ми звикли брати на себе відповідальність
+                                та завжди гарантуємо чесну,
+                                вчасну допомогу, навіть у ситуаціях,
+                                коли більшість безсилі.
+                            </h6>
+                            <p class="member__box__name">Олександр Олександровський</p>
+                            <p class="member__box__state">Керуючий партнер</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+<!--            <div class="member__switcher">-->
+<!--                <div class="member__switcher__circle member__switcher__circle-active"></div>-->
+<!--                <div class="member__switcher__circle"></div>-->
+<!--                <div class="member__switcher__circle"></div>-->
+<!--            </div>-->
 
         </div>
     </section>
@@ -355,5 +403,16 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="jquery.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+            dots: true,
+            speed: 600,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            dotsClass: 'member__switcher',
+        });
+    </script>
 </body>
 </html>

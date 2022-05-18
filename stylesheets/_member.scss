@@ -66,11 +66,14 @@
     @include flex__row;
     justify-content: center;
     gap: 15px;
+    list-style-type: none;
+    cursor: pointer;
 
-    &__circle {
+    li {
       @include width(16px);
-      padding: 8px;
-      border-radius: 100%;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
       background: #24A3FF;
       opacity: 0.2;
 
@@ -81,11 +84,32 @@
       &:hover {
         opacity: 0.6;
       }
+
+      button {
+        opacity: 0;
+      }
     }
 
-    &__circle-active {
-      opacity: 1;
-    }
+    //&__circle {
+    //  @include width(16px);
+    //  padding: 8px;
+    //  border-radius: 100%;
+    //  background: #24A3FF;
+    //  opacity: 0.2;
+    //  list-style-type: none;
+    //
+    //  &:active {
+    //    opacity: 1;
+    //  }
+    //
+    //  &:hover {
+    //    opacity: 0.6;
+    //  }
+    //}
+    //
+    //&__circle-active {
+    //  opacity: 1;
+    //}
   }
 }
 

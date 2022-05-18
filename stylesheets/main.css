@@ -325,9 +325,9 @@ img {
     display: none;
   }
   .header__link::before {
-    content: url("/images/icon/slash_mobile.svg");
+    content: url("../images/icon/slash_mobile.svg");
     display: inline-flex;
-    align-items: center;
+    align-items: flex-end;
     margin-right: 4px;
     width: 100%;
     max-width: 12px;
@@ -813,23 +813,26 @@ img {
   justify-content: space-between;
   justify-content: center;
   gap: 15px;
+  list-style-type: none;
+  cursor: pointer;
 }
-.member__switcher__circle {
+.member__switcher li {
   width: 100%;
   max-width: 16px;
-  padding: 8px;
-  border-radius: 100%;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
   background: #24A3FF;
   opacity: 0.2;
 }
-.member__switcher__circle:active {
+.member__switcher li:active {
   opacity: 1;
 }
-.member__switcher__circle:hover {
+.member__switcher li:hover {
   opacity: 0.6;
 }
-.member__switcher__circle-active {
-  opacity: 1;
+.member__switcher li button {
+  opacity: 0;
 }
 
 @media screen and (max-width: 1440px) {
