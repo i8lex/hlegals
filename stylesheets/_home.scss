@@ -29,6 +29,9 @@
     transform: translateX(-50%);
     @include width(872px);
 
+    &__box {
+      position: relative;
+    }
 
     &__symbol {
       @include width(872px);

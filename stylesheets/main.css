@@ -386,6 +386,9 @@ img {
   width: 100%;
   max-width: 872px;
 }
+.home__bgr__box {
+  position: relative;
+}
 .home__bgr__symbol {
   width: 100%;
   max-width: 872px;

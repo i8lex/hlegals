@@ -590,6 +590,9 @@ img {
   outline: none;
   border: 1px solid #24A3FF;
 }
+.contact__input:disabled {
+  background-color: #EDEDF7;
+}
 .contact__input:invalid {
   border: 1px solid #FF0000;
   color: #FF0000;
